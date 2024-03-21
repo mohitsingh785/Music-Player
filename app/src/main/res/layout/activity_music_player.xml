@@ -1,0 +1,123 @@
+<!-- Example layout for MusicPlayerActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:id="@+id/imageViewCover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:transitionName="shared_cover_image"
+        android:background="@drawable/rounded_corners_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_gravity="center"
+        android:id="@+id/textViewTrackName"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="Track Name" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/textViewArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+
+        android:text="Artist Name" />
+    <ProgressBar
+        android:id="@+id/progressBarCoverImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="30dp"
+      android:orientation="horizontal">
+      <TextView
+          android:id="@+id/textViewCurrentTime"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:layout_weight="1"
+          android:textStyle="bold"
+          android:fontFamily="sans-serif-condensed-light"
+          android:layout_gravity="start"
+          android:text="0:00" />
+
+      <TextView
+          android:id="@+id/textViewTotalTime"
+          android:layout_width="wrap_content"
+          android:textStyle="bold"
+android:fontFamily="sans-serif-condensed-light"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:layout_gravity="end"
+          android:text="0:00" />
+  </LinearLayout>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:orientation="horizontal">
+
+       <ImageButton
+           android:id="@+id/buttonPrev"
+           android:layout_width="wrap_content"
+           android:layout_margin="10dp"
+           android:background="@android:color/transparent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/previous"
+           />
+       <ImageButton
+           android:id="@+id/buttonPlayPause"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+           android:src="@drawable/play"
+           android:background="@android:color/transparent" />
+
+
+       <ImageButton
+           android:id="@+id/buttonNext"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+          android:src="@drawable/next"
+           android:background="@android:color/transparent"
+          />
+
+
+
+   </LinearLayout>
+
+
+
+
+</LinearLayout>

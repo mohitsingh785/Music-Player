@@ -1,0 +1,4 @@
+<!-- res/transition/change_image_trans.xml -->
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeBounds />
+</transitionSet>
